@@ -1,0 +1,12 @@
+adder(ad1).
+adder(ad2).
+succ(ad1,ad2).
+
+xor_operation(0,0,0). xor_operation(0,1,1). xor_operation(1,0,1). xor_operation(1,1,0). 
+and_operation(0,0,0). and_operation(0,1,0). and_operation(1,0,0). and_operation(1,1,1).
+or_operation(0,0,0). or_operation(0,1,1). or_operation(1,0,1). or_operation(1,1,1).
+
+out(X, G, V) :- adder(X), xor(G), in1(X, G, V1), in2(X, G, V2), xor_operation(V1, V2, V). 
+
+in1(X, x2, V) :- out(X, x1, V).
+in2(X, x2, V) :- c_in(X, V).  

@@ -1,0 +1,4 @@
+index(X) :- p(X,_).
+buchstabe(Y) :- t(_,Y).
+solution(X,Y) v trash(X,Y) :- index(X), buchstabe(Y).
+:- #count{X : solution(X,_)} < C, patternlength(C).

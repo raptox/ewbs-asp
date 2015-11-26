@@ -1,0 +1,5 @@
+:- solution(X,A), solution(Z,A), Z != X.
+:- solution(X,A), solution(X,B), A != B.
+:- solution(X,A), solution(Y,B), t(I,E), t(J,F), X = Y-1, A=E, B=F, X > I, I <= J. % substring
+:- solution(X,A), solution(Y,B), t(I,E), t(J,F), X = Y-1, A=E, B=F, X <= I, I > J. % substring
+:- solution(X,A), solution(Y,B), p(I,E), p(J,F), X=I, Y=J, A < B, E > F. % relative order

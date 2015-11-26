@@ -1,0 +1,4 @@
+hear_joke :- joke, not deaf.
+understand_joke :- hear_joke, not stupid.
+laugh :- understand_joke.
+laugh :- stupid, not joke.

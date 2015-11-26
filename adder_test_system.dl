@@ -1,0 +1,6 @@
+UNCOMPUTED_s_out(A,V) :- expect_s_out(A,V), not s_out(A,V).
+UNCOMPUTED_c_out(A,V) :- expect_c_out(A,V), not c_out(A,V).
+UNEXPECTED_s_out(A,V) :- s_out(A,V), not expect_s_out(A,V).
+UNEXPECTED_c_out(A,V) :- c_out(A,V), not expect_c_out(A,V).
+DUPLICATED_s_out(A,X,Y) :- s_out(A,X), s_out(A,Y), X < Y.
+DUPLICATED_c_out(A,X,Y) :- c_out(A,X), c_out(A,Y), X < Y.

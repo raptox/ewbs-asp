@@ -1,0 +1,4 @@
+a_in(ad1,1). b_in(ad1,0). c_in(ad1,0).
+a_in(ad2,0). b_in(ad2,0).
+expect_s_out(ad1,1). expect_c_out(ad1,0).
+expect_s_out(ad2,0). expect_c_out(ad2,0).
